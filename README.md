@@ -1,20 +1,20 @@
 Details and paramters required by Cloudformation tmpl - 
 
-BastionKeyName - Key for NAT server 
-KeyName - Key for server access 
-BastionInstanceType - Server type for Instance in etcd_layer
-NATInstanceType - NAT server type 
+	BastionKeyName - Key for NAT server 
+	KeyName - Key for server access 
+	BastionInstanceType - Server type for Instance in etcd_layer
+	NATInstanceType - NAT server type 
 
 Subnets - 
 
-VPC - "10.0.0.0/16"
-Public Subnet - "CIDR": "10.0.0.0/24"
-Private Subnet - "CIDR": "10.0.1.0/24"
+	VPC - "10.0.0.0/16"
+	Public Subnet - "CIDR": "10.0.0.0/24"
+	Private Subnet - "CIDR": "10.0.1.0/24"
 
 Security groups -
 
-NATSecurityGroup - Internet gateway is associated with this . 
-EtcdSecurityGroup - Opening etcd port from outside word. 
+	NATSecurityGroup - Internet gateway is associated with this . 
+	EtcdSecurityGroup - Opening etcd port from outside word. 
 
 IAM user - 
 
